@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(130, 97, 220);
+    background: linear-gradient(to right,rgb(215, 73, 215),rgb(74, 74, 203));
+    z-index: 0;
+    position: relative;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 90vh;
+    width: 70vh;
+    border: 3px solid black;
+    box-shadow: 10px 15px 10px ;
+    transform: translateZ(10px);
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 10px;
+     z-index: 2;
+     position: relative;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.subtitle{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.score-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.score-box{
+    background: linear-gradient(to right,rgb(215, 73, 215),rgb(74, 74, 203));
+    padding: 10px;
+    height: 15vh;
+    width: 15vw;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+   
+}
+
+.score{
+    font-size: 5vh;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.timer-section{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.timer{
+    font-size: 40px;
+    color: red;
+}
+
+.button-section button{
+    display: block;
+}
+
+.click-btn{
+    width: 30vw;
+    height: 7vh;
+    margin: 5px auto;
+    border-radius: 5px;
+    color: white;
+    font-size: 5vh;
+    background-color: lightgrey;
+    border: 1px solid black;
+
+}
+
+.click-btn:hover{
+    background: linear-gradient(to right,rgb(208, 56, 213),rgb(197, 80, 80));
+    transition: all 0.3s ease;
+    transform: translate3d(5px);
+    box-shadow: 10px;
+}
+
+.start-btn{
+    width: 30vw;
+    height: 5vh;
+    margin: 5px auto;
+    border-radius: 5px;
+    color: white;
+    font-size: 3vh;
+    background: linear-gradient(to right,rgb(215, 73, 215),rgb(74, 74, 203));
+    border: 1px solid black;
+}
+
+.reset-btn{
+    width: 30vw;
+    height: 4vh;
+    margin: 5px auto;
+    border-radius: 5px;
+    color: white;
+    font-size: 2vh;
+    background: linear-gradient(to right,rgb(249,75,75),rgb(2, 101, 215),rgb(249, 75, 75));
+    border: 1px solid black;
+}
+
+.pause-btn{
+    width: 30vw;
+    height: 5vh;
+    margin: 5px auto;
+    border-radius: 5px;
+    color: white;
+    font-size: 3vh;
+    background: linear-gradient(to right,rgb(215, 73, 215),rgb(74, 74, 203));
+    border: 1px solid black;
+}
+
+
+.status-message{
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.pla{
+    height: 30vh;
+    width: 100vw;
+    
+}
+video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
